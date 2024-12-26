@@ -4,7 +4,7 @@ import React from 'react';
 import '../index.css'
 const Menu = ({ onSelectAlgorithm }) => {
   const algorithms = ["One Time Pad algorithm",
-     "Hill cipher", "Monoalphabetic cipher","Caeser",
+     "Hill cipher", "Monoalphabetic cipher","Caesar cipher",
       "Polyalphabetic cipher" , "Rail fence cipher","Playfair cipher","Row Column Transposition cipher"];
 
   return (

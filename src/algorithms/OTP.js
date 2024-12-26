@@ -1,7 +1,8 @@
 // Encrypt using XOR and encode the result in Base64
 export function encryptOTP(plaintext, key) {
   if (plaintext.length !== key.length) {
-      throw new Error("Key length must match the plaintext length.");
+      alert("Key length must match the plaintext length.");
+      return ""
   }
 
   let ciphertext = '';
@@ -19,7 +20,8 @@ export function decryptOTP(ciphertextBase64, key) {
   const ciphertext = atob(ciphertextBase64);
 
   if (ciphertext.length !== key.length) {
-      throw new Error("Key length must match the ciphertext length.");
+      alert("Key length must match the ciphertext length.");
+      return ""
   }
 
   let plaintext = '';

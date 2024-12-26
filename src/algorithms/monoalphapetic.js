@@ -1,4 +1,9 @@
 export function encryptMono(plainText, key) {
+    if(key.length!==26)
+    {
+        alert("key must be 26 character");
+        return "";
+    }
   let encryptedText = '';
   key=  key.toUpperCase()
   plainText = plainText.toUpperCase()

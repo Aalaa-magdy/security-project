@@ -22,7 +22,7 @@ function App() {
 
 
   const handleEncrypt = (text, key) => {
-    if (selectedAlgorithm === "Caeser") {
+    if (selectedAlgorithm === "Caesar cipher") {
       setResult(encryptCaesar(text, key));
     } 
     else if (selectedAlgorithm === "One Time Pad algorithm") {
@@ -52,7 +52,7 @@ function App() {
   };
 
   const handleDecrypt = (text, key) => {
-    if (selectedAlgorithm === "Caeser") {
+    if (selectedAlgorithm === "Caesar cipher") {
       setResult(decryptCaesar(text, key));
     } else if (selectedAlgorithm === "One Time Pad algorithm") {
       setResult(decryptOTP(text, key));

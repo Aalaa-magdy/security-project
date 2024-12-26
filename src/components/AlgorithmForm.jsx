@@ -18,16 +18,16 @@ const AlgorithmForm = ({ algorithm, onEncrypt, onDecrypt }) => {
         value={text}
         onChange={(e) => setText(e.target.value.toUpperCase())}
       />
-      {(algorithm !== "Rail fence cipher" && algorithm !== "Caeser") && (
+      {(algorithm !== "Rail fence cipher" && algorithm !== "Caesar cipher") && (
         <input
           type="text"
           placeholder="Enter key"
           value={key}
-          onChange={(e) => setKey(e.target.value)}
+          onChange={(e) => setKey(e.target.value.toUpperCase())}
         />
       )}
       {
-        (algorithm ===  "Rail fence cipher" || algorithm === "Caeser") && (
+        (algorithm ===  "Rail fence cipher" || algorithm === "Caesar cipher") && (
           <input
             type="number"
             placeholder="Enter The Number"
